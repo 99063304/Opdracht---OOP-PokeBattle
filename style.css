@@ -1,0 +1,36 @@
+body{
+}
+.container{
+  background-image: url('images/pokebattle.jpg');
+  object-fit:cover;
+  width: 80vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+h1  {
+  text-align: center;
+}
+h2{
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+}
+button{
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  margin: 0 auto;
+}
+img{
+  width: 100px;
+  height: 100px;
+}
+.resultaat{
+  width: 20vw;
+  height: 20vh;
+  background-color: white;
+  border: 5px solid black;
+  border-radius: 50px 20px;
+  font-size: 40px;
+  padding: 40px;
+}

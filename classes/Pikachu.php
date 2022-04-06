@@ -1,4 +1,5 @@
 <?php
+require_once 'Pokemon.php';
 // Pokemon
 // heeft een naam
 // heeft een EnergyType
@@ -14,27 +15,13 @@
 // kan schade krijgen van een andere Pokemon als resultaat van een Attack
 // de totale schade van een Attack wordt verminderd op de health van de Pokemon die wordt aangevallen
 
-class Pokemon{
-   public  $naam;
-   public  $energyType;
-   public  $health;
-   public  $attacks;
-   public  $wweakness;
-   public  $resistance;
-   public  $hitpoints;
+class Pikachu extends Pokemon{
 
-
-  public function __construct($energyType, $naam, $health, $attacks, $weakness, $resistance, $hitpoints){
-    $this->energyType = $energyType;
-    $this->naam = $naam;
-    $this->health = $health;
-    $this->attacks = $attacks;
-    $this->weakness =  $weakness;
-    $this->resistance = $resistance;
-    $this->hitpoints = $hitpoints;
+  public function __construct($energyType, $naam, $health, $attacks, $weakness, $resistance){
+    parent::__construct($energyType, $naam, $health, $attacks, $weakness, $resistance);
   }
-  protected function Attack(){
-     return $this->naam;
+  public function Attack(){
+    return 'vvvvv';
   }
   public function Damage(){
 
