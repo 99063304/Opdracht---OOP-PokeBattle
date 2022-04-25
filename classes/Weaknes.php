@@ -4,7 +4,7 @@
   public $multiplier;
 
    public function __construct($EnergyType,$multiplier){
-     $this->$EnergyType =  $EnergyType;
-     $this->$multiplier =  $multiplier;
+     $this->EnergyType =  $EnergyType;
+     $this->multiplier =  $multiplier;
    }
  }
