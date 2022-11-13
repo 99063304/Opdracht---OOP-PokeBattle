@@ -24,13 +24,13 @@
 
 
 function gevecht($firstOP,$secondOP){
-  echo $secondOP->naam . ' Health: '. $secondOP->health.'<br>';
+  echo $secondOP->getNaam() . ' Health: '. $secondOP->getHealth.'<br>';
   echo $firstOP->Attacker($secondOP) .'<br>';
-  echo $secondOP->naam . ' Health: '.$secondOP->health.'<br>';
+  echo $secondOP->getNaam() . ' Health: '.$secondOP->getHealth.'<br>';
 
-  echo $firstOP->naam . ' Health: '. $firstOP->health.'<br>';
+  echo $firstOP->getNaam() . ' Health: '. $firstOP->getHealth.'<br>';
   echo $secondOP->Attacker($firstOP) .'<br>';
-  echo $firstOP->naam . ' Health: '.$firstOP->health.'<br>';
+  echo $firstOP->getNaam() . ' Health: '.$firstOP->getHealth.'<br>';
 }
 
 gevecht($pikachu,$charmander);
